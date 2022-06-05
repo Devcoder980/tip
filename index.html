@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip calculator app</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js"></script>
+</head>
+
+<body>
+  <header>
+    <p>spli</p>
+    <p id="para">tter</p>
+  </header>
+  <main>
+    <div class="continer">
+      <div class="left">
+        <div class="bill color-light">
+          <label>Bill</label>
+        </div>
+        <div class="input-icon margin-bottm">
+          <i class="icon color-light"><img src="/tip-calculator-app-main/images/icon-dollar.svg" alt=""></i>
+          <input type="text" name="" value="0" onmouseleave="input()" id="bill-input">
+        </div>
+        <div class="count-people ">
+          <label class="color-light">Number of People</label>
+        </div>
+        <div class="input-icon">
+          <img class="icon color-light" src="/tip-calculator-app-main/images/icon-person.svg" alt="">
+          <input type="number" name="" id="numofperson" onmouseout="total()">
+        </div>
+        <div id="select-tip ">
+          <label class="color-light">Select Tip %</label>
+        </div>
+        
+        <div class="tip-persentage flex flex-wrap margin-bottm">
+          <input type="button" value="5%" class="enter" id="num" onclick="input1()">
+          <input type="button" value="10%" class="enter" id="num1" onclick="input2()">
+          <input type="button" value="15%" class="enter" id="num2" onclick="input3()">
+          <input type="button" value="25%" class="enter" id="num3" onclick="input4()">
+          <input type="button" value="50%" class="enter" id="num4" onclick="input5()">
+          <input type="number" class="enter color-light" id="clickinput" placeholder="Custom" oninput="input6()">
+        </div>
+        
+      </div>
+      <div class="right">
+        <div class="color">
+          <div id="tip-amount">
+            <div>
+              <div>
+                <p>Tip Amount</p>
+              </div>
+              <div><small class="color-light">/person</small></div>
+            </div>
+            <div>
+              <strong>$</strong>
+              <strong id="price">0.00</strong>
+            </div>
+          </div>
+          <div id="tip-amount2">
+            <div>
+              <div>
+                <p>Total</p>
+              </div>
+              <div><small class="color-light">/person</small></div>
+            </div>
+            <div>
+              <strong>$</strong>
+              <strong id="price2">0.00</strong>
+            </div>
+          </div>
+          <div class="button-reset">
+            <input type="button" value="Reset" onclick="reset()">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="index.js"></script>
+  </script> 
+</body>
+
+</html>
